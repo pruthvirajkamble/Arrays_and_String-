@@ -1,5 +1,5 @@
 import java.util.*;
-class SmallestEle {
+class SecondSmallestEle {
     public static void main(String[] args) {
         int[] arr = new int[10];
         for (int i = 1, indx = 0; i <= 10; i++) {
@@ -11,14 +11,14 @@ class SmallestEle {
         }
 
         System.out.println("Generated array: " + Arrays.toString(arr));
-        int smallest = Integer.MAX_VALUE;
-        int secondSmallest = Integer.MAX_VALUE;
+        int smallest = Integer.MIN_VALUE;
+        int secondSmallest = Integer.MIN_VALUE;
 
         for (int ele : arr) {
-            if (ele < smallest) {
+            if (ele > smallest) {
                 secondSmallest = smallest; 
                 smallest = ele; 
-            } else if (ele < secondSmallest && ele != smallest) {
+            } else if (ele > secondSmallest && ele != smallest) {
                 secondSmallest = ele;
             }
         }

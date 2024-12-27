@@ -19,12 +19,12 @@ class Frequency
 					barr[j]=true;
 				}	
 			}
-			// if(icnt!=0)
-			// 	System.out.println(arr[i]+" : "+icnt);
+			if(icnt!=0)
+				System.out.println(arr[i]+" : "+icnt);
 			// if (icnt == 1)
 			// 	System.out.println(arr[i]);
-			if(icnt>1)
-				System.out.println(arr[i]);
+			// if(icnt>1)
+			// 	System.out.println(arr[i]);
 			
 		}
 	}
